@@ -1,0 +1,721 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  height: 370vh;
+  background-color: beige;
+}
+
+li{
+  list-style: none;
+}
+
+.logo a{
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.home{
+  position: absolute;
+  top: 25px;
+  left: 40%;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.shop{
+  position: absolute;
+  top: 25px;
+  left: 43%;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.about{
+  position: absolute;
+  top: 25px;
+  left: 47%;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.our{
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.contact{
+  position: absolute;
+  top: 25px;
+  left: 56.5%;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+.log{
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  right: 100px;
+  top: 25px;
+  font-size: 13px;
+}
+
+.cart{
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  right: 40px;
+  top: 25px;
+  font-size: 13px;
+}
+
+.img1{
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  top: 60px;
+  left: 0px;
+}
+
+.img2{
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  top: 60px;
+  right: 0px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+  align-items: center;
+}
+header .main-nav ul {
+  display: flex;
+  gap: 50px;
+}
+header .burger-cont {
+  display: none;
+  z-index: 999;
+}
+header .burger-cont .burger-menu {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+header .burger-cont .burger-menu .burger-line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+header .burger-cont .burger-nav {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 100vh;
+  background-color: beige;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: black;
+  transition: width 0.5s;
+}
+header .burger-cont .burger-nav ul {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+header .burger-cont .burger-nav .close-btn {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  border: 1px solid black;
+}
+header .burger-cont .burger-nav .close-btn span {
+  font-size: 25px;
+}
+
+
+
+
+.carousel {
+  position: absolute;
+  top: 985px;
+  left: 0px;
+  overflow: hidden;
+  width: 100%;
+  background: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.group {
+  display: flex;
+  gap: 100px;
+}
+
+.card {
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.anim{
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    z-index: 10; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 253, 170);
+    height:450px;
+    width: 400px;
+
+
+    animation: fade 2s ease-in-out 0s 1 forwards;
+}
+
+
+.anim h4{
+    font-size: 25px;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.anim a{
+    position: absolute;
+    left: 36%;
+    top: 60%;
+    border: 1px solid black;
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(5, 5, 66, 0.852);
+    color: rgb(240, 240, 163);
+    text-decoration: none;
+    transition: 0.6s ease, 0.6s;
+}
+
+
+.anim a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+@keyframes fade {
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.offer{
+   position: absolute;
+   top: 1220px;
+   left: 15%;
+   font-size: 50px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sale{
+    position: absolute;
+    top: 1320px;
+    left: 18.5%;
+    font-size: 19px;
+}
+
+.deal{
+    position: absolute;
+    top: 1380px;
+    left: 18.5%;
+    font-size: 22px;
+    background-color: rgb(5, 5, 66, 0.852);
+    color: rgb(241, 241, 166);
+    height: 50px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.deal:hover{
+    background-color: white;
+    color: black;
+}
+
+.textt {
+    position: absolute;
+    top: 1044px;
+    right: 0;
+    width: 50%;          
+    height: 68%;
+    background-color: rgba(255, 255, 255, 0.795);
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    color: rgba(5, 5, 66, 0.852);
+}
+
+
+.inner-text {
+    width: 30%;           
+    text-align: center;  
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.img3{
+  position: absolute;
+  width: 50%;
+  height: 90vh;
+  top: 1675px;
+  left: 0px;
+}
+
+.img4{
+  position: absolute;
+  width: 50%;
+  height: 90vh;
+  top: 1675px;
+  right: 0px;
+}
+
+.why{
+    position: absolute;
+    top: 2600px;
+    left: 46%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.textwhy{
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 2650px;
+    left: 26%;
+    max-width: 900px;       
+    margin: 0 auto;         
+    text-align: center;      
+    font-size: 32px;        
+    line-height: 1.4;        
+    color:rgb(5, 5, 66, 0.852);          
+    font-weight: 400;
+}
+
+
+
+.contact-log {
+  max-width: 900px;
+  position: absolute;
+  top: 2970px;
+  right: 60px;
+}
+
+.contact-log h2{
+  position: absolute;
+  bottom: 470px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.row {
+  display: flex;
+  gap: 60px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 2px solid red;
+  background: transparent;
+  padding: 8px 0;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.full {
+  width: 100%;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  height: 55px;
+  border: none;
+  background: #1f2a44;
+  color: #eaffb0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: black;
+}
+
+
+
+.ns {
+  position: absolute;
+  bottom: -2350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  left: 40%;
+}
+
+.ns a{
+  text-decoration: none;
+  color: #f39c12;
+  z-index: 999;
+}
+
+.ns a:hover{
+  scale: 1.05;
+}
+
+
+.phone{
+  position: absolute;
+  bottom: -2250px;
+  font-size: 17px;
+  color: #f39c12;
+  left: 25%;
+  z-index: 999;
+}
+
+.email:hover{
+  scale: 1.05;
+  cursor: pointer;
+}
+
+
+.email{
+  position: absolute;
+  bottom: -2270px;
+  font-size: 17px;
+  color: #f39c12;
+  left: 25%;
+  z-index: 999;
+}
+
+.street{
+  position: absolute;
+  bottom: -2350px;
+  font-size: 17px;
+  color: #f39c12;
+  left: 25%;
+  width: 10%;
+  z-index: 999;
+}
+
+.logo2{
+  position: absolute;
+  bottom: -2300px;
+  font-size: 30px;
+  color: #f39c12;
+  left: 5%;
+  z-index: 999;
+}
+
+.logo2:hover{
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.color{
+  width: 1200px;
+  height: 500px;
+  background-color: #1f2a44;
+  z-index: 990;
+  position: absolute;
+  bottom: -2499px;
+}
+
+
+@media screen and (max-width: 767px) {
+  header .burger-cont {
+    display: block;
+  }
+  header .main-nav {
+    display: none;
+  }
+
+  .body{
+    overflow: hidden;
+  }
+
+  .logo{
+    font-size: 10px;
+    margin: -210px;
+  }
+
+  .home{
+    position: absolute;
+    left: 230px;
+    z-index: 999;
+  }
+
+  .shop{
+    position: absolute;
+    left: 290px;
+    z-index: 999;
+  }
+
+  .about{
+    position: absolute;
+    left: 365px;
+    z-index: 999;
+  }
+
+  .our{
+    position: absolute;
+    left: 420px;
+    z-index: 999;
+  }
+
+  .contact{
+    position: absolute;
+    left: 520px;
+    z-index: 999;
+  }
+
+
+  .burger-menu{
+    margin: 0px -240px;
+  }
+
+
+  .img2{
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: 700px;
+  }
+
+  .img1{
+    width: 50%;
+    height: 700px;
+  }
+
+   header{
+    position: absolute;
+    right: 0px;
+    margin: 0px -195px;
+  }
+
+  .carousel{
+    position: absolute;
+    top: 760px;
+    left: 00px;
+    width: 765px;
+    overflow: hidden;
+  }
+
+  .anim{
+    margin: 0px -75px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .anim h4{
+    position: absolute;
+    margin: -30px -10px;
+    width: 70%;
+  }
+
+  .shop-now{
+    margin: 0px -20px;
+  }  
+
+  .offer{
+    position: absolute;
+    top: 900px;
+    left: 110px;
+    font-size: 35px;
+  }
+
+  .sale{
+    position: absolute;
+    top: 960px;
+    left: 135px;
+  }
+
+  .deal{
+    position: absolute;
+    top: 1000px;
+    left: 135px;
+  }
+
+  .textt{
+    position: absolute;
+    top: 818px;
+    right: 0px;
+    width: 50%;
+  }
+
+  .inner-text{
+    width: 55%;
+    position: absolute;
+    top: 150px;
+    left: 120px;
+    font-size: 20px;
+  }
+
+  .img3{
+    position: absolute;
+    top: 1390px;
+    width: 50%;
+    height: 50vh;
+  }
+  .img4{
+    position: absolute;
+    top: 1390px;
+    width: 50%;
+    height: 50vh;
+  }
+
+  .why{
+    margin: -700px -30px;
+    font-size: 19px;
+  }
+
+  .textwhy{
+    margin: -650px -60px;
+    font-size: 20px;
+    max-width: 500px;
+  }
+
+  .color{
+    margin: 650px 0px;
+    width: 100%;
+  }
+
+  .logo2{
+    margin: 650px 40px;
+  }
+
+  .phone{
+    margin: 650px 150px;
+  }
+
+  .email{
+    margin: 650px 150px;
+  }
+
+  .street{
+    margin: 650px 150px;
+    width: 24%;
+  }
+
+  .ns{
+    margin: 650px 270px;
+    width: 100%;
+  }
+
+  .contact-log{
+    margin: -70px 50px;
+  }
+
+.burger-nav {
+  margin: 0px 200px;
+}
+
+ 
+
+
+}
+
+/*# sourceMappingURL=style.css.map */
