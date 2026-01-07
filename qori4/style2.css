@@ -87,7 +87,7 @@ li{
 .contact{
   position: absolute;
   top: 25px;
-  left: 56.5%;
+  left: 56%;
   text-decoration: none;
   color: black;
   font-size: 13px;
@@ -117,13 +117,16 @@ li{
         display: none;
 
         .burger-menu{
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             padding: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             border: 1px solid black;
+            position: relative;
+            right: -130px;
+            top: 5px;
 
 
             .burger-line{
@@ -135,9 +138,9 @@ li{
 
         .burger-nav{
             position: absolute;
-            top: 0px;
-            right: 0px;
-            width: 0px;
+            top: 0;
+            right: 0;
+            width: 0;
             height: 100vh;
             background-color: beige;
             display: grid;
@@ -145,6 +148,7 @@ li{
             overflow: hidden;
             color: black;
             transition: width 0.5s;
+            z-index: 9999;
 
             ul{
                display: flex;
@@ -154,15 +158,21 @@ li{
 
             .close-btn{
                 position: absolute;
-                top: 60px;
-                right: 60px;
+                top: 5px;
+                right: 50px;
                 display: grid;
                 place-items: center;
                 padding: 20px;
                 border: 1px solid black;
+                width: 45px;
+                height: 45px;
+
 
                 span{
-                    font-size: 25px;
+                  font-size: 25px;
+                  position: relative;
+                  left: -5px;
+                  bottom: 13px;
                 }
             }
         }
@@ -737,6 +747,510 @@ button:hover {
 }
 
 
+@media screen and (max-width: 767px) {
+  header .burger-cont {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -90px;
+  }
+
+  .burger-nav{
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-130%);
+  }
 
 
 
+  header .main-nav {
+    display: none;
+  }
+
+
+  .logo{
+    font-size: 20px;
+    position: absolute;
+    left: -870px;
+    top: -20px;
+  }
+
+  .home{
+    position: absolute;
+    left: 230px;
+    z-index: 999;
+  }
+
+  .shop{
+    position: absolute;
+    left: 290px;
+    z-index: 999;
+  }
+
+  .about{
+    position: absolute;
+    left: 365px;
+    z-index: 999;
+  }
+
+  .our{
+    position: absolute;
+    left: 420px;
+    z-index: 999;
+  }
+
+  .contact{
+    position: absolute;
+    left: 520px;
+    z-index: 999;
+  }
+
+
+  .burger-menu{
+    margin: 0px -240px;
+  }
+
+
+  .img2{
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: 700px;
+  }
+
+  .img1{
+    width: 50%;
+    height: 700px;
+  }
+
+   header{
+    position: absolute;
+    right: 0px;
+    margin: 0px -195px;
+  }
+
+  .carousel{
+    position: absolute;
+    top: 760px;
+    left: 00px;
+    width: 765px;
+    overflow: hidden;
+  }
+
+  .anim{
+    margin: 0px -75px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .anim h4{
+    position: absolute;
+    margin: -30px -10px;
+    width: 70%;
+  }
+
+  .shop-now{
+    margin: 0px -20px;
+  }  
+
+  .offer{
+    position: absolute;
+    top: 900px;
+    left: 110px;
+    font-size: 35px;
+  }
+
+  .sale{
+    position: absolute;
+    top: 960px;
+    left: 135px;
+  }
+
+  .deal{
+    position: absolute;
+    top: 1000px;
+    left: 135px;
+  }
+
+  .textt{
+    position: absolute;
+    top: 818px;
+    right: 0px;
+    width: 50%;
+  }
+
+  .inner-text{
+    width: 55%;
+    position: absolute;
+    top: 150px;
+    left: 120px;
+    font-size: 20px;
+  }
+
+  .img3{
+    position: absolute;
+    top: 1390px;
+    width: 50%;
+    height: 50vh;
+  }
+  .img4{
+    position: absolute;
+    top: 1390px;
+    width: 50%;
+    height: 50vh;
+  }
+
+  .why{
+    margin: -700px -30px;
+    font-size: 19px;
+  }
+
+  .textwhy{
+    margin: -650px -60px;
+    font-size: 20px;
+    max-width: 500px;
+  }
+
+  .color{
+    margin: 650px 0px;
+    width: 100%;
+  }
+
+  .logo2{
+    margin: 650px 40px;
+  }
+
+  .phone{
+    margin: 650px 150px;
+  }
+
+  .email{
+    margin: 650px 150px;
+  }
+
+  .street{
+    margin: 650px 150px;
+    width: 24%;
+  }
+
+  .ns{
+    margin: 650px 270px;
+    width: 100%;
+  }
+
+  .contact-log{
+    margin: -70px 50px;
+  }
+
+.burger-nav {
+  margin: 0px 200px;
+}
+
+.home2{
+  font-size: 15px;
+  position: absolute;
+  top: 80px; 
+}
+
+.all-products{
+  font-size: 15px;
+}
+
+.greater{
+  font-size: 15px;
+  position: absolute;
+  top: 80px;
+  left: 77px;
+}
+
+.Browse-by{
+  font-size: 15px;
+}
+
+.browse{
+  position: absolute;
+  top: 185px;
+  width: 150px;
+}
+
+.all-products2{
+  font-size: 17px;
+  position: absolute;
+  top: 210px;
+}
+
+.Pet-Food{
+  font-size: 15px;
+  position: absolute;
+  top: 250px;
+}
+
+.pet-supplies{
+  font-size: 15px;
+  position: absolute;
+  top: 280px;
+}
+
+.pet-toys{
+  font-size: 15px;
+  position: absolute;
+  top: 310px;
+}
+
+.filter{
+  font-size: 17px;
+  position: absolute;
+  top: 370px;
+}
+
+.filters-line{
+  position: absolute;
+  top: 400px;
+  width: 150px;
+  left: 20px;
+}
+
+
+.img5{
+  width: 69vh;
+  position: absolute;
+  top: 183px;
+  height: 12vh;
+  left: 190px;
+}
+
+.all-products3{
+  position: absolute;
+  top: 310px;
+  font-size: 20px;
+  left: 190px;
+}
+
+.text{
+  position: absolute;
+  top: 350px;
+  width: 60%;
+  left: 190px;
+}
+
+.nine-prod{
+  position: absolute;
+  top: 440px;
+  left: 190px;
+}
+
+.products{
+  position: relative;
+  top: 440px;
+  left: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 60px;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.products .items{
+  width: 110%;
+  height: 120%;
+  flex-wrap: wrap;
+}
+
+.puppy-food{
+  position: absolute;
+  top: 580px;
+  font-size: 10px;
+  left: 185px;
+}
+
+.price1{
+  position: absolute;
+  top: 480px;
+  left: 190px;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.rubber-ball{
+  position: absolute;
+  top: 580px;
+  font-size: 10px;
+  left: 335px;
+}
+
+.price2{
+  position: absolute;
+  top: 480px;
+  left: 335px;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.chicken-dog-food{
+  position: absolute;
+  top: 580px;
+  left: 480px;
+  font-size: 10px;
+}
+
+.price3{
+  position: absolute;
+  top: 480px;
+  left: 480px;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.plush-toy{
+  position: absolute;
+  top: 580px;
+  left: 635px;
+  font-size: 10px;
+}
+
+.price4{
+  position: absolute;
+  top: 480px;
+  left: 635px;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.pet-collar{
+  position: absolute;
+  top: 740px;
+  left: 185px;
+  font-size: 10px;
+}
+
+.price5{
+  position: absolute;
+  top: 645px;
+  left: 190px;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.cat-food{
+  position: absolute;
+  top: 740px;
+  left: 335px;
+  font-size: 10px;
+}
+
+.price6{
+  position: absolute;
+  top: 645px;
+  left: 335px;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.dog-leash{
+  position: absolute;
+  top: 740px;
+  left: 480px;
+  font-size: 10px;
+}
+
+.price7{
+  position: absolute;
+  top: 644px;
+  left: 480px;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.pet-bed{
+  position: absolute;
+  top: 740px;
+  font-size: 10px;
+  left: 635px;
+}
+
+.price8{
+  position: absolute;
+  top: 644px;
+  font-size: 11px;
+  left: 635px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.Interactive-Toy{
+  position: absolute;
+  top: 900px;
+  left: 190px;
+  font-size: 10px;
+}
+
+.price9{
+  position: absolute;
+  top: 800px;
+  left: 190px;
+  font-size: 11px;
+  border-bottom: 1px solid rgba(5, 5, 66, 0.852);
+}
+
+.color{
+  width: 100vh;
+  position: absolute;
+  top: 370px;
+  height: 40%;
+}
+
+.logo2{
+  font-size: 25px;
+  position: absolute;
+  top: 520px;
+  left: 10px;
+}
+
+.phone{
+  position: absolute;
+  left: 120px;
+  top: 480px;
+}
+
+.email{
+  position: absolute;
+  left: 120px;
+  top: 500px;
+}
+
+.street{
+  position: absolute;
+  left: 120px;
+  top: 550px;
+}
+
+.ns{
+  position: absolute;
+  top: 470px;
+  left: 260px;
+}
+
+.product-nav{
+  position: absolute;
+  top: 0px;
+  margin: 0px 180px;
+  font-size: 15px;
+}
+
+.product-nav2{
+  position: absolute;
+  top: 20px;
+  margin: 0px 180px;
+}
+
+
+
+
+
+
+
+
+
+
+}
